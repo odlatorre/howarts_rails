@@ -1,0 +1,19 @@
+    <div class="container mt-4">
+        <h1 class="mb-4">Mostrando todos los personajes de Harry Potter</h1>
+
+        <div class="row">
+            <% @character.each do |p| %>
+                <div class="col-md-3 mb-4">
+                    <div class="card" style="width: 100%; height:150px;">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= p.name %></h5>
+                            <h6 class="card-subtitle mb-2">Casa: <%= p.house %></h6>
+                            <p class="card-text">Ubicación: <%= p.location %></p>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+
